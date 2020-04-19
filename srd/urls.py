@@ -10,4 +10,5 @@ urlpatterns = [
     path('portfolio/',portfolio),
     path('blog/',blog),
     path('contact/',contact),
+    path('blog-item/',blogitem)
 ]

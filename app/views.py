@@ -13,3 +13,5 @@ def blog(request):
 	return render(request,'blog.html',{})
 def contact(request):
 	return render(request,'contact.html',{})
+def blogitem(request):
+	return render(request,'blog-item.html',{})
