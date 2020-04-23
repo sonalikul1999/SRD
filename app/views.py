@@ -6,7 +6,7 @@ def index(request):
 def aboutus(request):
 	return render(request,'about.html',{})
 def service(request):
-	return render(request,'service.html',{})
+	return render(request,'services.html',{})
 def portfolio(request):
 	return render(request,'portfolio.html',{})
 def blog(request):

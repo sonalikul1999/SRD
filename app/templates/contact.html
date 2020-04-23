@@ -1,401 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 {% load static %}
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
 <html lang="en">
 
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Mosh - Creative Business Template | Home</title>
 
-        <!-- Basic -->
-        <title>Sulfur | Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
 
-        <!-- Define Charset -->
-        <meta charset="utf-8">
+    <!-- Core Stylesheet -->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
 
-        <!-- Responsive Metatag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Responsive CSS -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
-        <!-- Page Description and Author -->
-        <meta name="description" content="Sulfur - Responsive HTML5 Template">
-        <meta name="author" content="Shahriyar Ahmed">
+</head>
 
-        <!-- Bootstrap CSS  -->
-        <link rel="stylesheet" href="{% static 'asset/bootstrap/css/bootstrap.min.css' %}" type="text/css">
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="mosh-preloader"></div>
+    </div>
 
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="{% static 'asset/font-awesome/css/font-awesome.min.css' %}" type="text/css">
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area clearfix">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- Menu Area Start -->
+                <div class="col-12 h-100">
+                    <div class="menu_area h-100">
+                        <nav class="navbar h-100 navbar-expand-lg align-items-center">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="index.html"><img src="{% static 'img/core-img/logo.png' %}" alt="logo"></a>
 
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="{% static 'asset/css/owl.carousel.css' %}" type="text/css">
-        <link rel="stylesheet" href="{% static 'asset/css/owl.theme.css' %}" type="text/css">
-        <link rel="stylesheet" href="{% static 'asset/css/owl.transitions.css' %}" type="text/css">
-        
-        <!-- Css3 Transitions Styles  -->
-        <link rel="stylesheet" type="text/css" href="{% static 'asset/css/animate.css' %}">
-        
-        <!-- Lightbox CSS -->
-        <link rel="stylesheet" type="text/css" href="{% static 'asset/css/lightbox.css' %}">
+                            <!-- Menu Area -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-        <!-- Sulfur CSS Styles  -->
-        <link rel="stylesheet" type="text/css" href="{% static 'asset/css/style.css' %}">
-
-        <!-- Responsive CSS Style -->
-        <link rel="stylesheet" type="text/css" href="{% static 'asset/css/responsive.css' %}">
-
-
-        <script src="{% static 'asset/js/modernizrr.js' %}"></script>
-
-        
-
-
-    </head>
-
-    <body>
-    
-        <header class="clearfix">
-        
-            <!-- Start Top Bar -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-bar">
-                            <div class="row">
-                                    
-                                <div class="col-md-6">
-                                    <!-- Start Contact Info -->
-                                    <ul class="contact-details">
-                                        <li><a href="#"><i class="fa fa-phone"></i> +12 345 678 000</a>
-                                        </li>
-                                        <li><a href="#"><i class="fa fa-envelope-o"></i> support@sulfur.com</a>
-                                        </li> 
-                                    </ul>
-                                    <!-- End Contact Info -->
-                                </div><!-- .col-md-6 -->
-                                
-                                <div class="col-md-6">
-                                    <!-- Start Social Links -->
-                                    <ul class="social-list">
-                                        <li>
-                                            <a href="#"><i class="fa fa-rss"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-youtube"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-flickr"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-skype"></i></a>
-                                        </li>
-                                    </ul>
-                                    <!-- End Social Links -->
-                                </div><!-- .col-md-6 -->
-                            </div>
-                                
-                                
-                        </div>
-                    </div>                        
-
-                </div><!-- .row -->
-            </div><!-- .container -->
-            <!-- End Top Bar -->
-        
-            <!-- Start  Logo & Naviagtion  -->
-            <div class="navbar navbar-default navbar-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <!-- Stat Toggle Nav Link For Mobiles -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <!-- End Toggle Nav Link For Mobiles -->
-                        <a href="/index/"><img src="{% static 'asset\images\logo.png' %}" style="width:100px;margin-top:15px;margin-left:20px;"></a>
-
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        
-                        <!-- Start Navigation List -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="/index/">Home</a>
-                            </li>
-                            <li>
-                                <a href="/aboutus/">About Us</a>
-                            </li>
-                            <li>
-                                <a href="/service/">Service</a>
-                            </li>
-                            <li>
-                                <a href="/portfolio/">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="/blog/">Blog</a>
-                                <ul class="dropdown">
-                                    <li>
-                                        <a href="/blog-item/">Item Page</a>
+                            <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
+                                <ul class="navbar-nav animated" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                        <div class="dropdown-menu" aria-labelledby="moshDropdown">
+                                            <a class="dropdown-item" href="index.html">Home</a>
+                                            <a class="dropdown-item" href="about.html">About Us</a>
+                                            <a class="dropdown-item" href="services.html">Services</a>
+                                            <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                                            <a class="dropdown-item" href="blog.html">Blog</a>
+                                            <a class="dropdown-item" href="contact.html">Contact</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="elements.html">Elements</a>
+                                        </div>
                                     </li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                                 </ul>
-                            </li>
-                            <li><a class="active" href="/contact/">Contact</a>
-                            </li>
-                        </ul>
-                        <!-- End Navigation List -->
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Logo & Naviagtion -->
-            
-        </header>
-        
-        
-        <!-- Start Header Section -->
-        <div class="page-header">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1>Contact with Us</h1>
-                        </div>
+                                <!-- Search Form Area Start -->
+                                <div class="search-form-area animated">
+                                    <form action="#" method="post">
+                                        <input type="search" name="search" id="search" placeholder="Type keywords &amp; hit enter">
+                                        <button type="submit" class="d-none"><img src="{% static 'img/core-img/search-icon.png' %}" alt="Search"></button>
+                                    </form>
+                                </div>
+                                <!-- Search btn -->
+                                <div class="search-button">
+                                    <a href="#" id="search-btn"><img src="{% static 'img/core-img/search-icon.png' %}" alt="Search"></a>
+                                </div>
+                                <!-- Login/Register btn -->
+                                <div class="login-register-btn">
+                                    <a href="#">Login</a>
+                                    <a href="#">/ Register</a>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Header Section -->
-        
-        
-        
-        
-        
-        
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-        
-        <!-- Start Contact Us Section -->
-    <section id="contact" class="contact">
+    <!-- ***** Breadcumb Area Start ***** -->
+    <div class="mosh-breadcumb-area" style="background-image: url({% static 'img/core-img/breadcumb.png' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="bradcumbContent">
+                        <h2>Contact</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Say Hello</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Breadcumb Area End ***** -->
+
+    <!-- ***** Contact Area Start ***** -->
+    <section class="contact-area section_padding_100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
-                        <h2>Contact With Us</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                <!-- Contact Form Area -->
+                <div class="col-12 col-md-8">
+                    <div class="contact-form-area">
+                        <h2>Get in touch</h2>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn mosh-btn mt-50" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-12 col-md-4">
+                    <div class="contact-information">
+                        <h2>Contact</h2>
+                        <div class="single-contact-info d-flex">
+                            <div class="contact-icon mr-15">
+                                <img src="{% static 'img/core-img/map.png' %}" alt="">
+                            </div>
+                            <p>4127/ 5B-C Mislane Road,<br> Gibraltar, UK</p>
+                        </div>
+                        <div class="single-contact-info d-flex">
+                            <div class="contact-icon mr-15">
+                                <img src="{% static 'img/core-img/call.png' %}" alt="">
+                            </div>
+                            <p>Main: 203-808-8613 <br> Office: 203-808-8648</p>
+                        </div>
+                        <div class="single-contact-info d-flex">
+                            <div class="contact-icon mr-15">
+                                <img src="{% static 'img/core-img/message.png' %}" alt="">
+                            </div>
+                            <p>office@yourbusiness.com</p>
+                        </div>
+                        <div class="contact-social-info mt-50">
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay="600ms">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="600ms">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
-        
     </section>
+    <!-- ***** Contact Area End ***** -->
 
-    <div class="google-map">
-        <div id="map" data-position-latitude="48.858370" data-position-longitude="2.294481"></div>
+    <!-- Google Maps -->
+    <div class="map-area">
+        <div id="googleMap"></div>
     </div>
-        
-        
-        
-        <!-- Start Footer Section -->
-        <section id="footer-section" class="footer-section">
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area clearfix">
+        <!-- Top Fotter Area -->
+        <div class="top-footer-area section_padding_100_0">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Office Address</span>
-                            </h3>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <a href="#" class="mb-50 d-block"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellent esque sit amet tellus blandit. Etiam nec odio vestibul.</p>
                         </div>
-                        
-                        <div class="footer-address">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Fast links</h5>
                             <ul>
-                                <li class="footer-contact"><i class="fa fa-home"></i>123, Second Street name, Address</li>
-                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">info@domain.com</a></li>
-                                <li class="footer-contact"><i class="fa fa-phone"></i>+1 (123) 456-7890</li>
-                                <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.domain.com</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Services &amp; Features</a></li>
+                                <li><a href="#">Accordions and tabs</a></li>
+                                <li><a href="#">Menu ideas</a></li>
                             </ul>
                         </div>
-                    </div><!--/.col-md-3 -->
-                    
-                    
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Latest Tweet</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="latest-tweet">
-                            <div class="media">
-                                <div class="media-left">
-                                    <i class="fa fa-twitter fa-2x media-object"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">About 15 days ago</h4>
-                                    <p>Finally #tutsplus start a tutorial on A Beginner’s Guide to Using #joomla . Check it out here http://t.co/i6S4zeW8Z0</p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Blog</h5>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>23 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>Why we love stock photos</h6>
+                                </a>
                             </div>
-                        </div>
-                    </div><!--/.col-md-3 -->
-                    
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Stay With us</span>
-                            </h3>
-                        </div>
-                        <div class="subscription">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" required data-validation-required-message="Please enter your name.">
-                                <input type="submit" class="btn btn-primary" value="Subscribe">
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>22 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>Designin on grid. A few rules. </h6>
+                                </a>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>20 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>2017 World Design Congress</h6>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>FLICKR STREAM</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="flickr-widget">
-                            <ul class="flickr-list">
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img1.jpg' %}" data-lightbox="picture-1">
-                                        <img src="{% static 'asset/images/portfolio/img1.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img2.jpg' %}" data-lightbox="picture-2">
-                                        <img src="{% static 'asset/images/portfolio/img2.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img3.jpg' %}" data-lightbox="picture-3">
-                                        <img src="{% static 'asset/images/portfolio/img3.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img4.jpg' %}" data-lightbox="picture-4">
-                                        <img src="{% static 'asset/images/portfolio/img4.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img5.jpg' %}" data-lightbox="picture-5">
-                                        <img src="{% static 'asset/images/portfolio/img5.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img6.jpg' %}" data-lightbox="picture-6">
-                                        <img src="{% static 'asset/images/portfolio/img6.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img1.jpg' %}" data-lightbox="picture-7">
-                                        <img src="{% static 'asset/images/portfolio/img1.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'asset/images/portfolio/img2.jpg' %}" data-lightbox="picture-8">
-                                        <img src="{% static 'asset/images/portfolio/img2.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3 -->
-                </div><!--/.row -->
-            </div><!-- /.container -->
-        </section>
-        <!-- End Footer Section -->
-        
-        
-        <!-- Start Copyright Section -->
-        <div id="copyright-section" class="copyright-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="copyright">
-                            Copyright © 2014. All Rights Reserved.Design and Developed by <a href="http://www.themefisher.com">Themefisher</a>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Contact Info</h5>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/map.png" alt="">
+                                </div>
+                                <p>4127/ 5B-C Mislane Road, Gibraltar, UK</p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/call.png" alt="">
+                                </div>
+                                <p>Main: 203-808-8613 <br> Office: 203-808-8648</p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/message.png" alt="">
+                                </div>
+                                <p>office@yourbusiness.com</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-5">
-                        <div class="copyright-menu pull-right">
-                            <ul>
-                                <li><a href="#" class="active">Home</a></li>
-                                <li><a href="#">Sample Site</a></li>
-                                <li><a href="#">getbootstrap.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--/.row -->
-            </div><!-- /.container -->
+                </div>
+            </div>
         </div>
-        <!-- End Copyright Section -->
-        
-        
-        
-        <!-- Sulfur JS File -->
-        <script src="{% static 'asset/js/jquery-2.1.3.min.js' %}"></script>
-        <script src="{% static 'asset/js/jquery-migrate-1.2.1.min.js' %}"></script>
-        <script src="{% static 'asset/bootstrap/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'asset/js/owl.carousel.min.js' %}"></script>
-        <script src="{% static 'asset/js/jquery.appear.js' %}"></script>
-        <script src="{% static 'asset/js/jquery.fitvids.js' %}"></script>
-        <script src="{% static 'asset/js/jquery.nicescroll.min.js' %}"></script>
-        <script src="{% static 'asset/js/lightbox.min.js' %}"></script>
-        <script src="{% static 'asset/js/count-to.js' %}"></script>
-        <script src="{% static 'asset/js/styleswitcher.js' %}"></script>
-        <!-- Google Map -->
-        <script src="{% static 'asset/js/map.js' %}"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        
-        <script src="{% static 'asset/js/script.js' %}"></script>
-        
-    
-    </body>
+        <!-- Fotter Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="footer-bottom-content h-100 d-md-flex justify-content-between align-items-center">
+                            <div class="copyright-text">
+                                <p>
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Shreshtha Research &amp; Development</a>
+                                </p>
+                            </div>
+                            <div class="footer-social-info">
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
 </html>
